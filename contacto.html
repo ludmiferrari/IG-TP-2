@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="venobox/venobox.min.css" type="text/css" media="screen" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Colaboraciones</title>
+
+</head>
+<body class="bg-black">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img  src="img/logo.png" alt=""></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto"> 
+                <li class="nav-item">
+                <a class="nav-link btn btn-primary text-white ms-lg-3" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link btn btn-primary text-white ms-lg-3" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link btn btn-primary text-white ms-lg-3" href="historia.html">Historia</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link btn btn-primary text-white ms-lg-3" href="contacto.html">Contacto</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle btn btn-primary text-white ms-lg-3" 
+                    href="musica.html" 
+                    id="navbarDropdownProyectos" 
+                    role="button" 
+                    data-bs-toggle="dropdown" 
+                    >
+                        musica
+                    </a>
+                    
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownProyectos">
+
+                        <li><a class="dropdown-item" href="musica.html">musica</a></li>
+                        
+                        <li><a class="dropdown-item" href="colaboraciones.html">colaboraciones</a></li>
+                        
+                        <li><a class="dropdown-item" href="listeningparty.html">Listening party</a></li>
+                        
+                    </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="container mt-5 flex-grow-1">
+<main class="main-wrapper">
+    <section id="contact" class="container my-5 d-flex align-items-center justify-content-center">
+        <div class="row justify-content-center w-100">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="p-5 contact-card shadow-lg">
+                    <h3 class="h3 mb-5 text-center text-white">CONTACTANOS</h3>
+                    
+                    <form id="contactForm" action="#" method="POST" class="row g-4" novalidate>
+                        
+                        <div>
+                            <label for="name" class="form-label text-white fw-bold">Nombre</label>
+                            <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" class="form-control rounded-3" required>
+                            <div id="nameValidation" class="invalid-feedback">Por favor ingrese un nombre válido.</div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="form-label text-white fw-bold">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Ingresa tu email" class="form-control rounded-3" required>
+                            <div id="emailValidation" class="invalid-feedback">Por favor ingrese un email válido.</div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <label for="subject" class="form-label text-white fw-bold">Asunto</label>
+                            <input type="text" id="subject" name="subject" placeholder="Ingresa el asunto" class="form-control rounded-3" required>
+                            <div id="subjectValidation" class="invalid-feedback">Por favor ingrese un asunto válido.</div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <label for="message" class="form-label text-white fw-bold">Mensaje</label>
+                            <textarea id="message" name="message" placeholder="Escribe tu mensaje" rows="5" class="form-control rounded-3" required></textarea>
+                            <div id="messageValidation" class="invalid-feedback">Escribe tu mensaje.</div>
+                        </div>
+
+                        <div class="col-12 mt-4">
+                            <button type="submit" class="btn btn-primary w-100 fw-bold rounded-3">Enviar</button>
+                        </div>
+
+                        <div id="messageBox" class="col-12 mt-3 d-none">
+                            <div class="alert alert-success text-center mb-0" role="alert">
+                                ¡Mensaje enviado con éxito!
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+</div>
+<footer class="y-4 bg-dark text-white text-center mt-5 fixed-bottom">
+            <div class="container">
+                <p class="mb-0">Ludmila Ferrari - Informática General Drelichman - TP2 - 2025</p>
+            </div>
+        </footer>
+    <script src="js/form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
