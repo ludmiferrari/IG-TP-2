@@ -1,9 +1,7 @@
-/* 1. Estilos Globales y Fondo */
+/* 1. Estilos Globales, Fondo y navegacion*/
 html, body {
     height: 100%; 
 }
-
-
 
 .fondo-imagen {
             background-image: url('../img/logo-01.svg'); 
@@ -51,8 +49,8 @@ html, body {
 .galeria-miniatura:hover img {
     transform: scale(1.05);
 }
-____________________________
 
+/* Titulos principales-------------------*/
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -69,5 +67,5 @@ h2 .titulo-custome{
     color: #E44197;
     margin: 3em;
 }
-/*-------------------*/
+
 
