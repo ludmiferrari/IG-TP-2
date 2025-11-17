@@ -1,11 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home</title>
 </head>
-<body>
+<body class="bg-black">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a  class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto"> 
+                <li class="nav-item">
+                <a class="nav-link btn btn-primary text-white ms-lg-3" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link btn btn-primary text-white ms-lg-3" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link btn btn-primary text-white ms-lg-3" href="historia.html">Historia</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link btn btn-primary text-white ms-lg-3" href="contacto.html">Contacto</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle btn btn-primary text-white ms-lg-3" 
+                    href="#" 
+                    id="navbarDropdownProyectos" 
+                    role="button" 
+                    data-bs-toggle="dropdown" 
+                    >
+                        musica
+                    </a>
+                    
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownProyectos">
+                        
+                        <li><a class="dropdown-item" href="colaboraciones.html">colaboraciones</a></li>
+                        
+                        <li><a class="dropdown-item" href="listeningparty.html">Listening party</a></li>
+                        
+                    </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card mb-3 w-50">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="img/PP.png" class="img-fluid rounded-start" alt="foto de perfil desarrolladora">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h1 class="card-title">Hola!</h1>
+                    <p class="card-text">
+                    Hola!
+Mi nombre es Ludmila. Soy alumna de la carrera de Artes Multimediales en la UNA - Universidad Nacional de las Artes.
+Este sitio web fue realizado como trabajo de fin de año para la materia Informática General - Catedra Drelichman - 2024
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     
+        <footer class="y-4 bg-dark text-white text-center mt-5 fixed-bottom">
+            <div class="container">
+                <p class="mb-0">Ludmila Ferrari - Informática General Drelichman - TP2 - 2025</p>
+            </div>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
